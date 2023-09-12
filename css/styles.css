@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    colorFondo: #f2f2df;
+}
+
+.iconsRight {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.iconsRight a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.iconsRight button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.iconsRight img {
+    width: 50px;
+}
+
+.iconsRight img:hover{
+    transition: 0.5s;
+    filter: brightness(1.5); 
+}
+
+
+/***** MÓVILES *****/
+@media screen and (max-width: 767px) {
+    /* Vista Vertical */
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Vista Horizontal */
+}
+
+/***** TABLETS *****/
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    /* Vista Vertical */
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    /* Vista Horizontal */
+}
+
+/***** PCS *****/
+@media screen and (min-width: 1024px) {
+    
+}
