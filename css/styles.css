@@ -59,6 +59,15 @@ nav{
     margin: 0 1rem;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 50rem;
+}
+
 /***** MÓVILES *****/
 @media screen and (max-width: 767px) {
     /* Vista Vertical */
