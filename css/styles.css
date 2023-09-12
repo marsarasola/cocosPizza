@@ -6,6 +6,14 @@
 
 :root{
     colorFondo: #f2f2df;
+    color-1: #8F6A4D;
+    color-2: #9D8169;
+    color-3: #C7B5A9;
+    color-4: #A0846C;
+    color-amarillo: #dad6c7;
+    color-blanco: #FFFFFF;
+    color-negro: #031119;
+    color-naranja: #c0ae9a;
 }
 
 .iconsRight {
@@ -37,6 +45,26 @@
     filter: brightness(1.5); 
 }
 
+/******GENERAL
+
+.wsp{
+    position: fixed;
+    top: 75%;
+    left: 94%;
+}
+
+.whatsapp{
+    width: 7rem;
+    height: 7rem;
+    opacity: 40%;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.whatsapp:hover{
+    opacity: 100%;
+}
+ ******/
 
 /***** MÓVILES *****/
 @media screen and (max-width: 767px) {
