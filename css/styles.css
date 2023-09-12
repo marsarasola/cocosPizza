@@ -45,26 +45,7 @@
     filter: brightness(1.5); 
 }
 
-/******GENERAL
 
-.wsp{
-    position: fixed;
-    top: 75%;
-    left: 94%;
-}
-
-.whatsapp{
-    width: 7rem;
-    height: 7rem;
-    opacity: 40%;
-    cursor: pointer;
-    transition: 0.25s;
-}
-
-.whatsapp:hover{
-    opacity: 100%;
-}
- ******/
 
 /***** MÓVILES *****/
 @media screen and (max-width: 767px) {
