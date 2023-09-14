@@ -46,7 +46,6 @@
 }
 
 
-
 .nav-link{
     font-size: 1.6rem;
     font-weight: lighter;
@@ -66,6 +65,10 @@ footer {
     height: 15rem;
     bottom: 0;
     margin-top: 500px;
+}
+
+.contactContent{
+    margin-top: 200px;
 }
 
 

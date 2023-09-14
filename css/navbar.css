@@ -73,19 +73,16 @@ input[type=checkbox]:checked~#menu {
 
 @media screen and (max-width : 760px) {
 
-    /*Hace que el dropdown links aparescan en linea */
     ul {
         position: static;
         display: none;
         
     }
 
-    /*Crea espacio vertical */
     li {
         margin-bottom: 1px;
     }
 
-    /* crea todo el menu links  ancho full */
     ul li,
     li a {
         width: 100%;
@@ -93,7 +90,6 @@ input[type=checkbox]:checked~#menu {
         border-radius: 15px;
     }
 
-    /*Display '.muestra-menu' link*/
     .show-menu {
         display: block;
     }
