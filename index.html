@@ -5,22 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./assets/logo-cocos.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <title>Coco's Pizza - Fábrica de Pre Pizzas Artesanales</title>
 </head>
 
 <body>
+
     <header>
-        <div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contáctenos</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar">
+
+            <a href="./index.html" class="logo">
+                <img src="./assets/logo-sinfondo.png" alt="cocos-pizza" width="150" height="150">
+            </a>
+
+            <label for="show-menu" class="show-menu"><i style="font-size:24px" class="fa">&#xf0c9;</i></label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Catalogo</a></li>
+                <li><a href="#">Contáctenos</a></li>
+            </ul>
+
+        </nav>
     </header>
+
+
+
+
     <main>
         <section class="imgCarousel">
             <!--ESTARIA BUENO UNA PRESENTACION DE IMAGENES O ALGO SIMILAR-->
@@ -41,23 +55,23 @@
             </div>
             <div>
                 <!--AQUÍ IRÍA EL MAPA CON LAS UBICACIONES DE LOS LOCALES-->
-                <iframe src="https://www.google.com/maps/d/embed?mid=1U3Lqb5sbXS3D0LgNfOJfx9s0q-K6AXs&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>                
+                <iframe src="https://www.google.com/maps/d/embed?mid=1U3Lqb5sbXS3D0LgNfOJfx9s0q-K6AXs&ehbc=2E312F&noprof=1" width="300" height="300"></iframe>                
             </div>
         </section>
         <div class="iconsRight">
             <a href="https://www.whatsapp.com/" target="_blank">
                 <button>
-                    <img src="./assets/whatsapp-logo.png" alt="whatsapp Logo">
+                    <span class="fa fa-whatsapp fa-3x ga-right"></span>
                 </button>
             </a>
             <a href="https://www.facebook.com/pizzascocos/" target="_blank">
                 <button>
-                    <img src="./assets/facebook-logo.png" alt="Facebook Logo">
+                    <span class="fa fa-facebook-square fa-3x ga-right"></span>
                 </button>
             </a>
             <a href="https://www.instagram.com/pizzascocos/" target="_blank">
                 <button>
-                    <img src="./assets/instagram-logo.png" alt="Instagram Logo">
+                    <span class="fa fa-instagram fa-3x ga-right"></span>
                 </button>
             </a>
         </div>
