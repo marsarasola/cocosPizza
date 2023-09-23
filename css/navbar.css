@@ -26,7 +26,6 @@ header .navbar {
     -webkit-transition: .9s;
     transition: .9s;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    letter-spacing: 2px;
 }
 
 .navbar {
@@ -56,8 +55,7 @@ header.abajo #menu a:hover {
 
 ul {
     list-style-type: none;
-    margin: 5px;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 li {
@@ -66,7 +64,8 @@ li {
 
 li a {
     display: block;
-    min-width: 140px;
+    letter-spacing: 2px;
+    margin: 15px;
     height: 50px;
     text-align: center;
     line-height: 70px;
