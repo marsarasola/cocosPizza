@@ -16,6 +16,12 @@
     --color-naranja: #c0ae9a;
 }
 
+.nuestraHistoria{
+    margin-top: 800px;
+    text-align: center;
+    background-color: #8F6A4D;
+}
+
 .iconsRight {
     position: fixed;
     top: 80%;
@@ -43,6 +49,7 @@
 .iconsRight span:hover{
     transition: 0.5s;
     filter: brightness(1.5); 
+    cursor: pointer;
 }
 
 
