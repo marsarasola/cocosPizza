@@ -89,6 +89,10 @@ li:hover a {
     transition: all 0.5s ease;
 }
 
+nav > .open{
+    left: 0;
+}
+
 input[type=checkbox] {
     display: none;
 }
@@ -123,7 +127,12 @@ input[type=checkbox]:checked~#menu {
         display: block;
         position: fixed;
         cursor: pointer;
-        right: 5px;
+        right: 6px;
+        top: 18px;
+        background-color: #37680d;
+        width: 30px;
+        border-radius: 50%;
+        height: 30px;
     }
 
     .logo {
