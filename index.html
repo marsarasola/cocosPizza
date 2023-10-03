@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/Formularioflex.css">
     <title>Coco's Pizza - Fábrica de Pre Pizzas Artesanales</title>
 </head>
 
@@ -40,7 +41,62 @@
         </section>
         <section class="contactContent">
             <div>
-                <!--<AQUÍ IRÍA EL FORMULARIO-->
+                <form>
+                    <ul class="flex-outer">
+                      <li>
+                        <h2>Añadir Contacto</h2>
+                      </li>
+                      <li>
+                        <label for="first-name">Nombre</label>
+                        <input type="text" id="first-name" placeholder="Ingrese su nombre">
+                      </li>
+                      <br>
+                      <li>
+                        <label for="last-name">Apellido</label>
+                        <input type="text" id="last-name" placeholder="Ingrese su apellido">
+                      </li>
+                      <br>
+                      <li>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="Ingrese su dirección de correo">
+                      </li>
+                      <br>
+                      <li>
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" placeholder= "+54 011 15 40926815">
+                      </li>
+                      <br>
+                      <li>
+                        <label for="opcion">Motivo</label>
+                          <select name="opcion" id="opcion" placeholder="Seleccione opción">
+                              <option value="">Seleccione una opción</option>
+                              <option value="">Venta Mayorista</option>
+                              <option value="">Venta Minorista</option>
+                              <option value="">Atención al Consumidor</option>
+                              <option value="">Proveedores</option>
+                          </select>
+                      </li>
+                      <br>
+                     
+                      <li>
+                        <label for="message">Mensaje</label>
+                        <textarea rows="6" id="message" placeholder="Ingrese su mensaje"></textarea>
+                      </li>
+                      
+                        <br>
+                       
+                        <ul class="flex-inner">
+                         
+                        </ul>
+                        
+                      </li>
+                      
+                      <li>
+                        <button type="submit">Enviar</button>
+                      </li>
+                    </ul>
+                  </form>
+                </main>
             </div>
             <div>
                 <!--AQUÍ IRÍA EL MAPA CON LAS UBICACIONES DE LOS LOCALES-->
