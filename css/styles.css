@@ -5,20 +5,26 @@
 }
 
 :root{
-    colorFondo: #f2f2df;
-    color-1: #8F6A4D;
-    color-2: #9D8169;
-    color-3: #C7B5A9;
-    color-4: #A0846C;
-    color-amarillo: #dad6c7;
-    color-blanco: #FFFFFF;
-    color-negro: #031119;
-    color-naranja: #c0ae9a;
+    --colorFondo: #f2f2df;
+    --color-1: #8F6A4D;
+    --color-2: #9D8169;
+    --color-3: #C7B5A9;
+    --color-4: #A0846C;
+    --color-amarillo: #dad6c7;
+    --color-blanco: #FFFFFF;
+    --color-negro: #031119;
+    --color-naranja: #c0ae9a;
+}
+
+.nuestraHistoria{
+    margin-top: 800px;
+    text-align: center;
+    background-color: #8F6A4D;
 }
 
 .iconsRight {
     position: fixed;
-    top: 50%;
+    top: 80%;
     right: 20px;
     transform: translateY(-50%);
 }
@@ -36,19 +42,16 @@
     cursor: pointer;
 }
 
-.iconsRight img {
-    width: 50px;
+.iconsRight span {
+    width: 80%;
 }
 
-.iconsRight img:hover{
+.iconsRight span:hover{
     transition: 0.5s;
     filter: brightness(1.5); 
+    cursor: pointer;
 }
 
-nav{
-    background-color: #9D8169;
-    border-bottom: 1px solid var(--color-amarillo);
-}
 
 .nav-link{
     font-size: 1.6rem;
@@ -62,11 +65,19 @@ nav{
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     width: 50rem;
+    height: 15rem;
+    bottom: 0;
+    margin-top: 500px;
 }
+
+.contactContent{
+    margin-top: 200px;
+}
+
 
 /***** MÓVILES *****/
 @media screen and (max-width: 767px) {

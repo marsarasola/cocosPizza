@@ -1,0 +1,152 @@
+body {
+    padding: 0.1px;
+    overflow-x: hidden;
+    background-image: url('../assets/fondo.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+header {
+    width: 100vw;
+}
+
+header .navbar {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 100;
+    -webkit-transition: .9s;
+    transition: .9s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    width: 100vw;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
+    
+}
+
+header.abajo .navbar {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+header.abajo #menu a {
+    color: #000000;
+}
+
+header.abajo #menu a:hover {
+    color: var(--color-3);
+}
+
+
+.logo {
+    margin-top: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    letter-spacing: 2px;
+    margin: 15px;
+    height: 50px;
+    text-align: center;
+    line-height: 70px;
+    color: var(--color-blanco);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+li:hover a {
+    color: var(--color-3);
+}
+
+.show-menu {
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    padding: 2px 0;
+    display: none;
+    width: 10%;
+    height: 10%;
+    transition: all 0.5s ease;
+}
+
+nav > .open{
+    left: 0;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked~#menu {
+    display: block;
+}
+
+
+
+
+@media screen and (max-width : 760px) {
+
+    ul {
+        position: static;
+        display: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    ul li,
+    li a {
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .show-menu {
+        display: block;
+        position: fixed;
+        cursor: pointer;
+        right: 6px;
+        top: 18px;
+        background-color: #37680d;
+        width: 30px;
+        border-radius: 50%;
+        height: 30px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header.abajo .navbar {
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
+    }
+
+    header.abajo #menu a {
+        color: #ffffff;
+    }
+
+}
