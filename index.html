@@ -2,158 +2,172 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="./assets/logo-cocos.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <script src="./js/script.js"></script>
-    <link rel="stylesheet" href="./css/Formularioflex.css">
-    <title>Coco's Pizza - Fábrica de Pre Pizzas Artesanales</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="./assets/logo-cocos.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/slider.css">
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/Formularioflex.css">
+  <title>Coco's Pizza - Fábrica de Pre Pizzas Artesanales</title>
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar">
+  <header>
+    <nav class="navbar">
+      <a href="./index.html" class="logo">
+        <img src="./assets/logo-cocos-.png" alt="cocos-pizza" width="150" height="100">
+      </a>
+      <label for="show-menu" class="show-menu"><i style="font-size:24px" class="fa">&#xf0c9;</i></label>
+      <input type="checkbox" id="show-menu" role="button">
+      <ul id="menu">
+        <li><a href="./index.html">INICIO</a></li>
+        <li><a href="#nuestraHistoria">NUESTRA HISTORIA</a></li>
+        <li><a href="#">CATÁLOGO</a></li>
+        <li><a href="#">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="imgCarousel">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="./assets/slider/slider01.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./assets/slider/slider02.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./assets/slider/slider01.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./assets/slider/slider04.png" style="width:100%">
+        </div>
+      </div>
+      <div class="dotContent">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+    <section id="nuestraHistoria" class="nuestraHistoria">
+      <h1>NUESTRA HISTORIA</h1>
+      <div>
+        <!--AQUÍ ESTARÍA LA INFO ACERCA DE LA EMPRESA-->
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores doloremque mollitia. Fugit natus
+        minus facere error sapiente molestias, tenetur praesentium itaque provident quia id pariatur, eaque fugiat
+        similique unde.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni perferendis soluta eum quidem minima totam,
+        ab libero incidunt amet maiores quas molestias odio quam autem nihil doloremque suscipit obcaecati.
+      </div>
+    </section>
+    <section class="productContent">
+      <div>
+        <!--ESTA SERÍA LA SECCIÓN DE LOS PRODUCTOS-->
+      </div>
+    </section>
+    <section class="contactContent">
+      <div>
+        <form>
+          <ul class="flex-outer">
+            <li>
+              <h2>Añadir Contacto</h2>
+            </li>
+            <li>
+              <label for="first-name">Nombre</label>
+              <input type="text" id="first-name" placeholder="Ingrese su nombre">
+            </li>
+            <br>
+            <li>
+              <label for="last-name">Apellido</label>
+              <input type="text" id="last-name" placeholder="Ingrese su apellido">
+            </li>
+            <br>
+            <li>
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" placeholder="Ingrese su dirección de correo">
+            </li>
+            <br>
+            <li>
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" placeholder="+54 011 15 40926815">
+            </li>
+            <br>
+            <li>
+              <label for="opcion">Motivo</label>
+              <select name="opcion" id="opcion" placeholder="Seleccione opción">
+                <option value="">Seleccione una opción</option>
+                <option value="">Venta Mayorista</option>
+                <option value="">Venta Minorista</option>
+                <option value="">Atención al Consumidor</option>
+                <option value="">Proveedores</option>
+              </select>
+            </li>
+            <br>
 
-            <a href="./index.html" class="logo">
-                <img src="./assets/logo-cocos-.png" alt="cocos-pizza" width="150" height="100">
-            </a>
+            <li>
+              <label for="message">Mensaje</label>
+              <textarea rows="6" id="message" placeholder="Ingrese su mensaje"></textarea>
+            </li>
 
-            <label for="show-menu" class="show-menu"><i style="font-size:24px" class="fa">&#xf0c9;</i></label>
-            <input type="checkbox" id="show-menu" role="button">
-            <ul id="menu">
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="#nuestraHistoria">NUESTRA HISTORIA</a></li>
-                <li><a href="#">CATÁLOGO</a></li>
-                <li><a href="#">CONTACTO</a></li>
+            <br>
+
+            <ul class="flex-inner">
+
             </ul>
 
-        </nav>
-    </header>
+            </li>
 
-
-
-
-    <main>
-        <section class="imgCarousel">
-            <!--ESTARIA BUENO UNA PRESENTACION DE IMAGENES O ALGO SIMILAR-->
-        </section>
-        <section id="nuestraHistoria" class="nuestraHistoria">
-            <h1>NUESTRA HISTORIA</h1>
-            <div>
-                <!--AQUÍ ESTARÍA LA INFO ACERCA DE LA EMPRESA-->
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores doloremque mollitia. Fugit natus minus facere error sapiente molestias, tenetur praesentium itaque provident quia id pariatur, eaque fugiat similique unde.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni perferendis soluta eum quidem minima totam, ab libero incidunt amet maiores quas molestias odio quam autem nihil doloremque suscipit obcaecati.
-                
-            </div>
-        </section>
-        <section class="productContent">
-            <div>
-                <!--ESTA SERÍA LA SECCIÓN DE LOS PRODUCTOS-->
-            </div>
-        </section>
-        <section class="contactContent">
-            <div>
-                <form>
-                    <ul class="flex-outer">
-                      <li>
-                        <h2>Añadir Contacto</h2>
-                      </li>
-                      <li>
-                        <label for="first-name">Nombre</label>
-                        <input type="text" id="first-name" placeholder="Ingrese su nombre">
-                      </li>
-                      <br>
-                      <li>
-                        <label for="last-name">Apellido</label>
-                        <input type="text" id="last-name" placeholder="Ingrese su apellido">
-                      </li>
-                      <br>
-                      <li>
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" placeholder="Ingrese su dirección de correo">
-                      </li>
-                      <br>
-                      <li>
-                        <label for="phone">Teléfono</label>
-                        <input type="tel" id="phone" placeholder= "+54 011 15 40926815">
-                      </li>
-                      <br>
-                      <li>
-                        <label for="opcion">Motivo</label>
-                          <select name="opcion" id="opcion" placeholder="Seleccione opción">
-                              <option value="">Seleccione una opción</option>
-                              <option value="">Venta Mayorista</option>
-                              <option value="">Venta Minorista</option>
-                              <option value="">Atención al Consumidor</option>
-                              <option value="">Proveedores</option>
-                          </select>
-                      </li>
-                      <br>
-                     
-                      <li>
-                        <label for="message">Mensaje</label>
-                        <textarea rows="6" id="message" placeholder="Ingrese su mensaje"></textarea>
-                      </li>
-                      
-                        <br>
-                       
-                        <ul class="flex-inner">
-                         
-                        </ul>
-                        
-                      </li>
-                      
-                      <li>
-                        <button type="submit">Enviar</button>
-                      </li>
-                    </ul>
-                  </form>
-                </main>
-            </div>
-            <div>
-                <!--AQUÍ IRÍA EL MAPA CON LAS UBICACIONES DE LOS LOCALES-->
-                <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1U3Lqb5sbXS3D0LgNfOJfx9s0q-K6AXs&ehbc=2E312F&noprof=1" width="300" height="300"></iframe>                 -->
-            </div>
-        </section>
-        <div class="iconsRight">
-            <a href="https://www.whatsapp.com/" target="_blank">
-                <button>
-                    <span class="fa fa-whatsapp fa-3x ga-right"></span>
-                </button>
-            </a>
-            <a href="https://www.facebook.com/pizzascocos/" target="_blank">
-                <button>
-                    <span class="fa fa-facebook-square fa-3x ga-right"></span>
-                </button>
-            </a>
-            <a href="https://www.instagram.com/pizzascocos/" target="_blank">
-                <button>
-                    <span class="fa fa-instagram fa-3x ga-right"></span>
-                </button>
-            </a>
-        </div>
-    </main>
-    <footer>
-        <div>
-            <section class="footerLeft">
-                <!--ESTARÍA BUENO EL LOGO CON ALGO ABAJO Y AGREGAR REDES SOCIALES-->
-            </section>
-            <section class="footerRight">
-                <!--ESTARÍA BUENO AGREGAR OTROS ENLACES COMO POR EJEMPLO VARIEDADES DE PRODUCTOS
+            <li>
+              <button type="submit">Enviar</button>
+            </li>
+          </ul>
+        </form>
+  </main>
+  </div>
+  <div>
+    <!--AQUÍ IRÍA EL MAPA CON LAS UBICACIONES DE LOS LOCALES-->
+    <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1U3Lqb5sbXS3D0LgNfOJfx9s0q-K6AXs&ehbc=2E312F&noprof=1" width="300" height="300"></iframe>                 -->
+  </div>
+  </section>
+  <div class="iconsRight">
+    <a href="https://www.whatsapp.com/" target="_blank">
+      <button>
+        <span class="fa fa-whatsapp fa-3x ga-right"></span>
+      </button>
+    </a>
+    <a href="https://www.facebook.com/pizzascocos/" target="_blank">
+      <button>
+        <span class="fa fa-facebook-square fa-3x ga-right"></span>
+      </button>
+    </a>
+    <a href="https://www.instagram.com/pizzascocos/" target="_blank">
+      <button>
+        <span class="fa fa-instagram fa-3x ga-right"></span>
+      </button>
+    </a>
+  </div>
+  </main>
+  <footer>
+    <div>
+      <section class="footerLeft">
+        <!--ESTARÍA BUENO EL LOGO CON ALGO ABAJO Y AGREGAR REDES SOCIALES-->
+      </section>
+      <section class="footerRight">
+        <!--ESTARÍA BUENO AGREGAR OTROS ENLACES COMO POR EJEMPLO VARIEDADES DE PRODUCTOS
                 INFORMACIÓN ESCRITA DE LAS UBICACIONES DE LOS LOCALES CON DIRECCIÓN Y HORARIO DE ATENCIÓN,
                 ETC.-->
-            </section>
-        </div>
-        <div>
-            <p>©Copyright 2023 - COCO'S PIZZA - Todos los derechos reservados</p>
-        </div>
-    </footer>
-
+      </section>
+    </div>
+    <div>
+      <p>©Copyright 2023 - COCO'S PIZZA - Todos los derechos reservados</p>
+    </div>
+  </footer>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>
-
