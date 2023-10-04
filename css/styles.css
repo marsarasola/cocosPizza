@@ -62,17 +62,7 @@
     margin: 0 1rem;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50rem;
-    height: 15rem;
-    bottom: 0;
-    margin-top: 500px;
-}
+
 
 .contactContent{
     margin-top: 200px;

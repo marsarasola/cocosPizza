@@ -53,16 +53,16 @@ header.abajo #menu a:hover {
 }
 
 
-ul {
+.navbar ul {
     list-style-type: none;
     margin-top: 15px;
 }
 
-li {
+.navbar li {
     display: inline-block;
 }
 
-li a {
+.navbar li a {
     display: block;
     letter-spacing: 2px;
     margin: 15px;
@@ -74,7 +74,7 @@ li a {
     transition: all 0.5s ease;
 }
 
-li:hover a {
+.navbar li:hover a {
     color: var(--color-3);
 }
 
@@ -89,38 +89,52 @@ li:hover a {
     transition: all 0.5s ease;
 }
 
-nav > .open{
-    left: 0;
-}
+
 
 input[type=checkbox] {
     display: none;
+    
+
 }
 
 input[type=checkbox]:checked~#menu {
     display: block;
+    
 }
 
 
 
 
 @media screen and (max-width : 760px) {
+    
 
-    ul {
+    .navbar ul {
         position: static;
         display: none;
         width: 100%;
         margin: auto;
+       
+        
     }
 
-    ul li,
-    li a {
+    .navbar{
+        position: fixed;
+        top: 0;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar ul li,
+    .navbar li a {
         background-color: rgb(0, 0, 0);
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
         padding: 20px;
+        
+        float: right;
+        margin-right: .7em;
+        transition: transform .10s;
     }
 
     .show-menu {
@@ -133,6 +147,8 @@ input[type=checkbox]:checked~#menu {
         width: 30px;
         border-radius: 50%;
         height: 30px;
+        
+        
     }
 
     .logo {
@@ -143,10 +159,12 @@ input[type=checkbox]:checked~#menu {
 
     header.abajo .navbar {
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
+        
     }
 
     header.abajo #menu a {
         color: #ffffff;
     }
 
+    
 }
