@@ -14,6 +14,7 @@ footer .container .footerRight ul {
     display: flex;
     flex-direction: column;
     list-style: none;
+    padding: 5px;
 }
 
 .container {
