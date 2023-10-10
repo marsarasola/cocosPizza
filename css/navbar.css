@@ -187,6 +187,16 @@ input[type=checkbox]:checked~#menu {
     header.abajo #menu a {
         color: #ffffff;
     }
+
+    #show-menu:checked + .navbar ul {
+        display: none;
+    }
+
+    /* Estilos para mostrar el menú cuando no está marcado el checkbox */
+    #show-menu:not(:checked) + .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
