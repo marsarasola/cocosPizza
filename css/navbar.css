@@ -150,6 +150,8 @@ input[type=checkbox]:checked~#menu {
 
     /* Otros estilos existentes */
 
+    /* es más sencillo quitar y poner una clase que manipular el atributo checked con JS de un input.
+    buen hack igual */
     #menu.open {
         transform: translateX(0); /* Despliega el menú al estar marcado el checkbox */
     }

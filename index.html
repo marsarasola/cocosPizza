@@ -170,6 +170,13 @@
 
         </div>
     </footer>
+    <!-- 
+        el script tiene que estar al final del body
+         o tener el atributo defer si está en el head, 
+         para que cargue una vez que haya cargado todo el html
+         sino, manipular el dom causa errores
+         porque busca los nodos antes de que se hayan cargado
+     -->
     <script src="./js/script.js"></script>
 
 </body>
