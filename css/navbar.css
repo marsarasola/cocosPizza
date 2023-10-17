@@ -82,7 +82,6 @@ header.abajo #menu a:hover {
     text-decoration: none;
     color: #000000;
     text-align: center;
-    padding: 2px 0;
     display: none;
     width: 10%;
     height: 10%;
@@ -117,7 +116,7 @@ input[type=checkbox]:checked~#menu {
     position: fixed;
     top: 18px;
     right: 6px;
-    background-color: #37680d;
+    background-color: #6bc71b;
     border-radius: 50%;
     font-size: 20px;
 }
@@ -161,16 +160,20 @@ input[type=checkbox]:checked~#menu {
     }
 
     .show-menu {
-        display: block;
+        display: grid;
+        place-items: center;
         position: fixed;
         cursor: pointer;
-        right: 6px;
+        right: 13px;
         top: 18px;
-        background-color: #37680d;
-        width: 30px;
+        background-color: #f7d780;
+        width: 2.5rem;
+        height: 2.5rem;
         border-radius: 50%;
-        height: 30px;
+        color: 	black;
         z-index: 100;
+        margin-top: 1.5rem;
+
     }
 
     .logo {
