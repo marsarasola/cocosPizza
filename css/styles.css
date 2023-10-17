@@ -20,11 +20,12 @@
     margin-top: 800px;
     text-align: center;
     background-color: #8F6A4D;
+    
 }
 
 .iconsRight {
     position: fixed;
-    top: 80%;
+    top: 96%;
     right: 20px;
     transform: translateY(-50%);
 }
@@ -62,17 +63,7 @@
     margin: 0 1rem;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50rem;
-    height: 15rem;
-    bottom: 0;
-    margin-top: 500px;
-}
+
 
 .contactContent{
     margin-top: 200px;

@@ -5,7 +5,6 @@ window.addEventListener("scroll", function () {
 })
 
 
-const navIcon = document.querySelector('.show-menu')
-const navList = document.querySelector('#menu')
 
-navIcon.onclick = () => navList.classList.toggle('open')
+
+
