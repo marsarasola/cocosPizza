@@ -150,7 +150,7 @@ input[type=checkbox]:checked~#menu {
 
     /* Otros estilos existentes */
 
-    input[type=checkbox]:checked ~ #menu {
+    #menu.open {
         transform: translateX(0); /* Despliega el menú al estar marcado el checkbox */
     }
 
@@ -164,7 +164,7 @@ input[type=checkbox]:checked~#menu {
         place-items: center;
         position: fixed;
         cursor: pointer;
-        right: 13px;
+        right: 6px;
         top: 18px;
         background-color: #f7d780;
         width: 2.5rem;
@@ -173,7 +173,7 @@ input[type=checkbox]:checked~#menu {
         color: 	black;
         z-index: 100;
         margin-top: 1.5rem;
-
+        
     }
 
     .logo {
