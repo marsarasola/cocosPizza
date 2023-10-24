@@ -79,6 +79,63 @@ footer {
     margin-top: 200px;
 }
 
+/* Catalogue */
+.catalogue {
+    background-color:  rgba(0, 0, 0, 0.568);
+    text-align: center;
+}
+
+.catalogue h2 {
+    color: var(--color-amarillo);
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.productContent{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+
+}
+
+.product{
+    width: 33.3%;
+    height: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-image: url(../assets/bg_02.jpg);
+
+}
+
+.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50%;
+    height: 250px;
+    position: static;
+}
+
+.details{
+    width: 60%;
+    background-color:  rgba(0, 0, 0, 0.568);
+    padding: 20px;
+}
+
+.details h3 {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.details p {
+    color: var(--color-naranja);
+}
+
+
+
+
 
 /***** MÓVILES *****/
 @media screen and (max-width: 767px) {
