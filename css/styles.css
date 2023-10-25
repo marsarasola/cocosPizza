@@ -18,6 +18,8 @@
 }
 
 .nuestraHistoria{
+    width: 100%;
+    height: 800px;
     margin-top: 800px;
     text-align: center;
     background-color: #8F6A4D;
@@ -80,6 +82,11 @@ footer {
 }
 
 /* Catalogue */
+
+.catalogueSection{
+    padding-top: 125px;
+}
+
 .catalogue {
     background-color:  rgba(0, 0, 0, 0.568);
     text-align: center;
@@ -95,19 +102,18 @@ footer {
 
 .productContent{
     width: 100%;
-    height: 800px;
+    height: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
 
 }
 
 .product{
-    width: 400px;
-    height: 250px;
+    width: 33.3%;
+    height: 225px;
     display: flex;
-    flex-wrap: nowrap;
     background-image: url(../assets/bg_02.jpg);
 
 }
@@ -117,13 +123,13 @@ footer {
     background-repeat: no-repeat;
     background-position: center center;
     width: 50%;
-    height: 250px;
+    height: 225px;
     position: static;
 }
 
 .details{
-    width: 60%;
-    background-color:  rgba(0, 0, 0, 0.568);
+    width: 50%;
+    background-color:  rgba(119, 90, 46, 0.055);
     padding: 20px;
 }
 
