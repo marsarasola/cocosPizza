@@ -83,6 +83,8 @@ footer {
 .catalogue {
     background-color:  rgba(0, 0, 0, 0.568);
     text-align: center;
+    width: 100%;
+    height: auto;
 }
 
 .catalogue h2 {
@@ -93,15 +95,17 @@ footer {
 
 .productContent{
     width: 100%;
-    height: auto;
+    height: 800px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
 
 }
 
 .product{
-    width: 33.3%;
-    height: 50%;
+    width: 400px;
+    height: 250px;
     display: flex;
     flex-wrap: nowrap;
     background-image: url(../assets/bg_02.jpg);
