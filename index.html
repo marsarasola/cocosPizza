@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://fontawesome.com/icons/facebook?f=brands&s=solid&pc=%23ffffff">
     <link rel="icon" href="./assets/logo-cocos.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/Formularioflex.css">
     <title>Coco's Pizza - Fábrica de Pre Pizzas Artesanales</title>
 </head>
@@ -23,17 +22,20 @@
                 <img src="./assets/logo-cocos-.png" alt="cocos-pizza" width="150" height="100">
             </a>
 
-            <label for="show-menu" class="show-menu"><i style="font-size:25px" class="fa">&#xf0c9;</i></label>
+            <label for="show-menu" class="show-menu"><i style="font-size:24px" class="fa">&#xf0c9;</i></label>
             <input type="checkbox" id="show-menu" role="button">
             <ul id="menu">
-                <li><a href="./index.html" id="navLink">INICIO</a></li>
-                <li><a href="#nuestraHistoria" id="navLink">NUESTRA HISTORIA</a></li>
-                <li><a href="#catalogo" id="navLink">CATÁLOGO</a></li>
-                <li><a href="#contacto" id="navLink">CONTACTO</a></li>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="#nuestraHistoria">NUESTRA HISTORIA</a></li>
+                <li><a href="#">CATÁLOGO</a></li>
+                <li><a href="#">CONTACTO</a></li>
             </ul>
 
         </nav>
     </header>
+
+
+
 
     <main>
         <section class="imgCarousel">
@@ -42,22 +44,18 @@
         <section id="nuestraHistoria" class="nuestraHistoria">
             <h1>NUESTRA HISTORIA</h1>
             <div>
-                AQUÍ ESTARÍA LA INFO ACERCA DE LA EMPRESA
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores doloremque mollitia. Fugit
-                natus minus facere error sapiente molestias, tenetur praesentium itaque provident quia id pariatur,
-                eaque fugiat similique unde.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni perferendis soluta eum quidem
-                minima totam, ab libero incidunt amet maiores quas molestias odio quam autem nihil doloremque suscipit
-                obcaecati.
-
+                <!--AQUÍ ESTARÍA LA INFO ACERCA DE LA EMPRESA-->
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores doloremque mollitia. Fugit natus minus facere error sapiente molestias, tenetur praesentium itaque provident quia id pariatur, eaque fugiat similique unde.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni perferendis soluta eum quidem minima totam, ab libero incidunt amet maiores quas molestias odio quam autem nihil doloremque suscipit obcaecati.
+                
             </div>
-        </section> 
-        <section class="productContent" id="catalogo">
+        </section>
+        <section class="productContent">
             <div>
                 <!--ESTA SERÍA LA SECCIÓN DE LOS PRODUCTOS-->
             </div>
         </section>
-        <section class="contactContent" id="contacto">
+        <section class="contactContent">
             <div>
                 <form>
                     <ul class="flex-outer">
@@ -118,55 +116,42 @@
             </div>
             <div>
                 <!--AQUÍ IRÍA EL MAPA CON LAS UBICACIONES DE LOS LOCALES-->
-                <!-- <iframe
-                    src="https://www.google.com/maps/d/embed?mid=1U3Lqb5sbXS3D0LgNfOJfx9s0q-K6AXs&ehbc=2E312F&noprof=1"
-                    width="300" height="300"></iframe> -->
+                <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1U3Lqb5sbXS3D0LgNfOJfx9s0q-K6AXs&ehbc=2E312F&noprof=1" width="300" height="300"></iframe>                 -->
             </div>
         </section>
         <div class="iconsRight">
-            <!-- TODO:  https://faq.whatsapp.com/5913398998672934/-->
             <a href="https://www.whatsapp.com/" target="_blank">
                 <button>
-                    <img src="./assets/whatsapp-logo.png" alt="whatsapp" width="40px">
-                    <!-- <span class="fa fa-whatsapp fa-3x ga-right"></span> -->
+                    <span class="fa fa-whatsapp fa-3x ga-right"></span>
+                </button>
+            </a>
+            <a href="https://www.facebook.com/pizzascocos/" target="_blank">
+                <button>
+                    <span class="fa fa-facebook-square fa-3x ga-right"></span>
+                </button>
+            </a>
+            <a href="https://www.instagram.com/pizzascocos/" target="_blank">
+                <button>
+                    <span class="fa fa-instagram fa-3x ga-right"></span>
                 </button>
             </a>
         </div>
     </main>
-
     <footer>
-        <div class="container">
-            <div class="footerLeft">
-                <img src="./assets/logo-sinfondo.png" alt="cocos-pizza" width="150" height="150">
-            </div>
-
-            <div class="footerRight">
-                <ul>
-                    <li id="title">MEDIO DE CONTACTO</li>
-                    <li>Tel: (0351) 4419200 | (0351) 4576162</li>
-                    <li>E-mail: ventas@peucor.com.ar | peucor@gmail.com</li>
-                    <li>Dirección: Av. Sabattini 2256, Córdoba.</li>
-                </ul>
-                <a href="https://www.facebook.com/pizzascocos/" target="_blank">
-                    <button>
-                        <i class="fa fa-facebook fa-2x" style="color: #ffffff"></i>
-                    </button>
-                </a>
-                <a href="https://www.instagram.com/pizzascocos/" target="_blank">
-                    <button>
-                        <i class="fa fa-instagram fa-2x"  style="color: #ffffff;"></i>
-                    </button>
-                </a>
-            </div>
-
-          
+        <div>
+            <section class="footerLeft">
+                <!--ESTARÍA BUENO EL LOGO CON ALGO ABAJO Y AGREGAR REDES SOCIALES-->
+            </section>
+            <section class="footerRight">
+                <!--ESTARÍA BUENO AGREGAR OTROS ENLACES COMO POR EJEMPLO VARIEDADES DE PRODUCTOS
+                INFORMACIÓN ESCRITA DE LAS UBICACIONES DE LOS LOCALES CON DIRECCIÓN Y HORARIO DE ATENCIÓN,
+                ETC.-->
+            </section>
         </div>
-        <div class="down">
+        <div>
             <p>©Copyright 2023 - COCO'S PIZZA - Todos los derechos reservados</p>
-
         </div>
     </footer>
-    <script src="./js/script.js"></script>
 
 </body>
 
