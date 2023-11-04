@@ -1,9 +1,15 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Tinos:wght@700&display=swap');
+
+
 .contactContent {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  text-align: center;
+  width: 100%;
 }
 
 
@@ -11,19 +17,38 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 60%;
+  height: 45%;
   margin: 50px;
-  padding: 20px 100px;
-  background-color: #8F6A4D;
+  padding: 18px 100px;
+  background-color: rgba(0, 0, 0, 0.568);
   border-radius: 15px;
   box-shadow: 6px 5px 5px;
+  color: white;
+  
 }
+
+.text, .text2{
+  font-size: 50px;
+  font-size: bolder;
+  font-family: 'Tinos', serif;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 100px;
+  background-color: rgba(0, 0, 0, 0.568);
+  border-radius: 15px;
+  color: white;
+}
+
 
 .map{
   width: 50%;
   display: flex;
   justify-content: center;
+  border-radius: 15px;
 }
+
 
 .boton-anadir{
   margin-top: 30px;
@@ -31,7 +56,7 @@
   height: 2rem;
   align-items: center;
   border-radius: 10px;
-  background-color: #9c8670;
+  background-color: white;
   font-weight: bold;
 
 }
@@ -55,7 +80,7 @@ input, select{
   align-items: center;
   border: 1px solid black;
   border-radius:1ex;
-  background-color: #9c8670;
+  background-color: #ffffff;
   font-weight: bold;
   color: black;
 }
@@ -65,7 +90,7 @@ textarea{
   padding: 30px 50px;
   border: 1px solid black;
   border-radius:1ex;
-  background-color: #9c8670;
+  background-color: white;
   font-weight: bolder;
 }
 
@@ -77,6 +102,7 @@ textarea{
 }
 
 
+
 @media screen and (max-width: 760px){
   .contactContent{
     flex-direction: column;
@@ -84,6 +110,11 @@ textarea{
 
   .anadir{
     width: 100%;
+  }
+
+  .text{
+    width: 100%;
+
   }
 
   
