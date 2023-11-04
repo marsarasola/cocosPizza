@@ -29,7 +29,7 @@
             <ul id="menu">
                 <li><a href="./index.html" id="navLink">INICIO</a></li>
                 <li><a href="#nuestraHistoria" id="navLink">NUESTRA HISTORIA</a></li>
-                <li><a href="#catalogo" id="navLink">CATÁLOGO</a></li>
+                <li><a href="#catalogueSection" id="navLink">CATÁLOGO</a></li>
                 <li><a href="#contacto" id="navLink">CONTACTO</a></li>
             </ul>
 
@@ -125,81 +125,56 @@
         </div>
         </section>
 
+
         <section class="contactContent" id="contacto">
-            <div>
-                <form>
-                    <ul class="flex-outer">
-                        <li>
-                            <h2>Añadir Contacto</h2>
-                        </li>
-                        <li>
-                            <label for="first-name">Nombre</label>
-                            <input type="text" id="first-name" placeholder="Ingrese su nombre">
-                        </li>
-                        <br>
-                        <li>
-                            <label for="last-name">Apellido</label>
-                            <input type="text" id="last-name" placeholder="Ingrese su apellido">
-                        </li>
-                        <br>
-                        <li>
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" placeholder="Ingrese su dirección de correo">
-                        </li>
-                        <br>
-                        <li>
-                            <label for="phone">Teléfono</label>
-                            <input type="tel" id="phone" placeholder="+54 011 15 40926815">
-                        </li>
-                        <br>
-                        <li>
-                            <label for="opcion">Motivo</label>
-                            <select name="opcion" id="opcion" placeholder="Seleccione opción">
-                                <option value="">Seleccione una opción</option>
-                                <option value="">Venta Mayorista</option>
-                                <option value="">Venta Minorista</option>
-                                <option value="">Atención al Consumidor</option>
-                                <option value="">Proveedores</option>
-                            </select>
-                        </li>
-                        <br>
-
-                        <li>
-                            <label for="message">Mensaje</label>
-                            <textarea rows="6" id="message" placeholder="Ingrese su mensaje"></textarea>
-                        </li>
-
-                        <br>
-
-                        <ul class="flex-inner">
-
-                        </ul>
-
-                        </li>
-
-                        <li>
-                            <button type="submit">Enviar</button>
-                        </li>
-                    </ul>
+            <div class="anadir">
+                <h1 class="titulo-form">DATOS DE CONTACTO</h1>
+                <form action="">
+                    <label for="name">
+                        <input type="text" id="name" required placeholder="Nombre...">
+                    </label>
+                    <label for="lastName">
+                        <input type="text" id="lastName" required placeholder="Apellido...">
+                    </label>
+                    <label for="email">
+                        <input type="email" id="email" required placeholder="Email...">
+                    </label>
+                    <label for="phone">
+                        <input type="number" id="phone" required placeholder="Teléfono...">
+                    </label>
+                    <label for="opcion">
+                        <select name="opcion" id="opcion" placeholder="Seleccione opción">
+                            <option value="">Seleccione una opción</option>
+                            <option value="">Venta Mayorista</option>
+                            <option value="">Venta Minorista</option>
+                            <option value="">Atención al Consumidor</option>
+                            <option value="">Proveedores</option>
+                        </select>
+                    </label>
+                    <label for="message">
+                        <textarea rows="6" id="message" placeholder="Ingrese su mensaje"></textarea>
+                    </label>
+                    <button type="submit" class="boton-anadir" id="add-btn">ENVIAR</button>
                 </form>
-    </main>
-    </div>
-    <div>
-        <!--AQUÍ IRÍA EL MAPA CON LAS UBICACIONES DE LOS LOCALES-->
-        <!-- <iframe
+            </div>
+
+            <div class="map">
+                <iframe
                     src="https://www.google.com/maps/d/embed?mid=1U3Lqb5sbXS3D0LgNfOJfx9s0q-K6AXs&ehbc=2E312F&noprof=1"
-                    width="300" height="300"></iframe> -->
-    </div>
-    </section>
-    <div class="iconsRight">
-        <!-- TODO:  https://faq.whatsapp.com/5913398998672934/-->
-        <a href="https://www.whatsapp.com/" target="_blank">
-            <button>
-                <img src="./assets/whatsapp-logo.png" alt="whatsapp" width="40px">
-                <!-- <span class="fa fa-whatsapp fa-3x ga-right"></span> -->
-            </button>
-        </a>
-    </div>
+                    width="400" height="500"></iframe>
+            </div>
+
+        </section>
+
+        <div class="iconsRight">
+            <!-- TODO:  https://faq.whatsapp.com/5913398998672934/-->
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <button>
+                    <img src="./assets/whatsapp-logo.png" alt="whatsapp" width="40px">
+                    <!-- <span class="fa fa-whatsapp fa-3x ga-right"></span> -->
+                </button>
+            </a>
+        </div>
     </main>
 
     <footer>

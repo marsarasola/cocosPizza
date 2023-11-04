@@ -1,46 +1,90 @@
-.body{
-  background-color: #f7f7f7;
-  font-family: "Open Sans",sans-serif;
-}
-.cabecera{
-  text-align: center;
-}
-.flex-outer li,
-.flex-inner {
+.contactContent {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-}
-.flex-outer > li > label,
-.flex-outer li p {
-  flex: 1 0 120px;
-  max-width: 220px;
-}
-.flex-outer > li > label,
-.flex-inner {
-  flex: 1 0 120px;
-  
-}
-.flex-outer > li > label + *,
-.flex-inner {
-  flex: 1 0 220px;
+
 }
 
-.flex-outer li button {
-    margin-left: auto;
-    padding: 8px 16px;
-    border: none;
-    background: #dcd7d7;
-    color: #323030;
-    text-transform: uppercase;
-    letter-spacing: .09em;
-    border-radius: 2px;
+
+.anadir{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 60%;
+  margin: 50px;
+  padding: 20px 100px;
+  background-color: #8F6A4D;
+  border-radius: 15px;
+  box-shadow: 6px 5px 5px;
+}
+
+.map{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.boton-anadir{
+  margin-top: 30px;
+  padding: 2px 20px;
+  height: 2rem;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #9c8670;
+  font-weight: bold;
+
+}
+
+::placeholder{
+  color: black;
+}
+
+form{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 1rem;
+}
+
+input, select{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 2px;
+  padding: 3px 15px;
+  height: 2rem;
+  align-items: center;
+  border: 1px solid black;
+  border-radius:1ex;
+  background-color: #9c8670;
+  font-weight: bold;
+  color: black;
+}
+
+textarea{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 30px 50px;
+  border: 1px solid black;
+  border-radius:1ex;
+  background-color: #9c8670;
+  font-weight: bolder;
+}
+
+.titulo-form{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  
+}
+
+
+@media screen and (max-width: 760px){
+  .contactContent{
+    flex-direction: column;
   }
-  .flex-inner li {
-    width: 100px;
-    
+
+  .anadir{
+    width: 100%;
   }
-  flex-inner {
-    justify-content: space-between;
-    
-  }
+
+  
+}
