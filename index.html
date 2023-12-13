@@ -32,162 +32,149 @@
                 <li><a href="#catalogueSection" id="navLink">CATÁLOGO</a></li>
                 <li><a href="#contacto" id="navLink">CONTACTO</a></li>
             </ul>
-
+            <img src="./assets/icons/sound-on.png" alt="" id="muteButton" onclick="toggleMute()" class="silent">
         </nav>
+
     </header>
 
     <main>
-        <section class="imgCarousel">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="./assets/slider/slider01.png" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="./assets/slider/slider02.png" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="./assets/slider/slider01.png" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="./assets/slider/slider04.png" style="width:100%">
-                </div>
+        <video autoplay loop id="video-player">
+            <source src="./assets/video/presentation.mp4" type="video/mp4" >
+            Tu navegador no puede reproducir el video.
+        </video>
+
+        <div class="mainContent" id="nuestraHistoria">
+            <section class="nuestraHistoria">
+                <h1>NUESTRA HISTORIA</h1>
+                <p>
+                    AQUÍ ESTARÍA LA INFO ACERCA DE LA EMPRESA
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores doloremque mollitia.
+                    Fugit
+                    natus minus facere error sapiente molestias, tenetur praesentium itaque provident quia id pariatur,
+                    eaque fugiat similique unde.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni perferendis soluta eum quidem
+                    minima totam, ab libero incidunt amet maiores quas molestias odio quam autem nihil doloremque
+                    suscipit
+                    obcaecati.
+                </p>
+            </section>
+
+            <div class="catalogueSection" id="catalogueSection">
+                <section class="catalogue" id="catalogue">
+                    <h2>Nuestro Catálogo</h2>
+                    <div class="productContent">
+                        <div class="product ga ca">
+                            <div class="image" style="background-image: url(../assets/catalogue/pizza-1.jpg)"></div>
+                            <section class="details">
+                                <h3>Producto 1</h3>
+                                <p>Descripción y detalles del producto 1</p>
+                            </section>
+                        </div>
+                        <div class="product ga cb">
+                            <div class="image" style="background-image: url(../assets/catalogue/pizza-2.jpg)"></div>
+                            <section class="details">
+                                <h3>Producto 2</h3>
+                                <p>Descripción y detalles del producto 2</p>
+                            </section>
+                        </div>
+                        <div class="product ga catalogue">
+                            <div class="image" style="background-image: url(../assets/catalogue/pizza-3.jpg)"></div>
+                            <section class="details">
+                                <h3>Producto 3</h3>
+                                <p>Descripción y detalles del producto 3</p>
+                            </section>
+                        </div>
+                        <div class="product gb cb">
+                            <div class="image" style="background-image: url(../assets/catalogue/pizza-4.jpg)"></div>
+                            <section class="details">
+                                <h3>Producto 4</h3>
+                                <p>Descripción y detalles del producto 4</p>
+                            </section>
+                        </div>
+                        <div class="product gb ca">
+                            <div class="image" style="background-image: url(../assets/catalogue/pizza-5.jpg)"></div>
+                            <section class="details">
+                                <h3>Producto 5</h3>
+                                <p>Descripción y detalles del producto 5</p>
+                            </section>
+                        </div>
+                        <div class="product gb cb">
+                            <div class="image" style="background-image: url(../assets/catalogue/pizza-6.jpg)"></div>
+                            <section class="details">
+                                <h3>Producto 6</h3>
+                                <p>Descripción y detalles del producto 6</p>
+                            </section>
+                        </div>
+                    </div>
             </div>
-            <div class="dotContent">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </section>
+            </section>
 
 
-        <section id="nuestraHistoria" class="nuestraHistoria">
-            <h1>NUESTRA HISTORIA</h1>
-            <div>
-                AQUÍ ESTARÍA LA INFO ACERCA DE LA EMPRESA
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolores doloremque mollitia. Fugit
-                natus minus facere error sapiente molestias, tenetur praesentium itaque provident quia id pariatur,
-                eaque fugiat similique unde.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni perferendis soluta eum quidem
-                minima totam, ab libero incidunt amet maiores quas molestias odio quam autem nihil doloremque suscipit
-                obcaecati.
+            <section class="contactContent" id="contacto">
 
-            </div>
-        </section>
-
-        <div class="catalogueSection" id="catalogueSection">
-            <section class="catalogue" id="catalogue">
-                <h2>Nuestro Catálogo</h2>
-                <div class="productContent">
-                    <div class="product ga ca">
-                        <div class="image" style="background-image: url(../assets/catalogue/pizza-1.jpg)"></div>
-                        <section class="details">
-                            <h3>Producto 1</h3>
-                            <p>Descripción y detalles del producto 1</p>
-                        </section>
-                    </div>
-                    <div class="product ga cb">
-                        <div class="image" style="background-image: url(../assets/catalogue/pizza-2.jpg)"></div>
-                        <section class="details">
-                            <h3>Producto 2</h3>
-                            <p>Descripción y detalles del producto 2</p>
-                        </section>
-                    </div>
-                    <div class="product ga catalogue">
-                        <div class="image" style="background-image: url(../assets/catalogue/pizza-3.jpg)"></div>
-                        <section class="details">
-                            <h3>Producto 3</h3>
-                            <p>Descripción y detalles del producto 3</p>
-                        </section>
-                    </div>
-                    <div class="product gb cb">
-                        <div class="image" style="background-image: url(../assets/catalogue/pizza-4.jpg)"></div>
-                        <section class="details">
-                            <h3>Producto 4</h3>
-                            <p>Descripción y detalles del producto 4</p>
-                        </section>
-                    </div>
-                    <div class="product gb ca">
-                        <div class="image" style="background-image: url(../assets/catalogue/pizza-5.jpg)"></div>
-                        <section class="details">
-                            <h3>Producto 5</h3>
-                            <p>Descripción y detalles del producto 5</p>
-                        </section>
-                    </div>
-                    <div class="product gb cb">
-                        <div class="image" style="background-image: url(../assets/catalogue/pizza-6.jpg)"></div>
-                        <section class="details">
-                            <h3>Producto 6</h3>
-                            <p>Descripción y detalles del producto 6</p>
-                        </section>
-                    </div>
+                <div class="text">
+                    <p> LLENA EL FORMULARIO Y NOS CONTACTAREMOS CON VOS! </p>
                 </div>
+
+                <div class="anadir">
+                    <h1 class="titulo-form">DATOS DE CONTACTO</h1>
+                    <form action="">
+                        <label for="name">
+                            <input type="text" id="name" required placeholder="Nombre...">
+                        </label>
+                        <label for="lastName">
+                            <input type="text" id="lastName" required placeholder="Apellido...">
+                        </label>
+                        <label for="email">
+                            <input type="email" id="email" required placeholder="Email...">
+                        </label>
+                        <label for="phone">
+                            <input type="number" id="phone" required placeholder="Teléfono...">
+                        </label>
+                        <label for="opcion">
+                            <select name="opcion" id="opcion" placeholder="Seleccione opción">
+                                <option value="">Seleccione una opción</option>
+                                <option value="">Venta Mayorista</option>
+                                <option value="">Venta Minorista</option>
+                                <option value="">Atención al Consumidor</option>
+                                <option value="">Proveedores</option>
+                            </select>
+                        </label>
+                        <label for="message">
+                            <textarea rows="6" id="message" placeholder="Ingrese su mensaje"></textarea>
+                        </label>
+                        <button type="submit" class="boton-anadir" id="add-btn">ENVIAR</button>
+                    </form>
+                </div>
+
+            </section>
+
+            <section class="contactContent">
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/d/embed?mid=1U3Lqb5sbXS3D0LgNfOJfx9s0q-K6AXs&ehbc=2E312F&noprof=1"
+                        width="600" height="570" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+                <div class="text2">
+                    <p> DONDE NOS ENCONTRAMOS? </p>
+                </div>
+            </section>
+
+
+            <div class="iconsRight">
+                <!-- TODO:  https://faq.whatsapp.com/5913398998672934/-->
+                <a href="https://www.whatsapp.com/" target="_blank">
+                    <button>
+                        <img src="./assets/whatsapp-logo.png" alt="whatsapp" width="40px">
+                        <!-- <span class="fa fa-whatsapp fa-3x ga-right"></span> -->
+                    </button>
+                </a>
+            </div>
         </div>
-        </section>
 
-
-        <section class="contactContent" id="contacto">
-
-            <div class="text">
-                <p> LLENA EL FORMULARIO Y NOS CONTACTAREMOS CON VOS! </p>
-            </div>
-
-            <div class="anadir">
-                <h1 class="titulo-form">DATOS DE CONTACTO</h1>
-                <form action="">
-                    <label for="name">
-                        <input type="text" id="name" required placeholder="Nombre...">
-                    </label>
-                    <label for="lastName">
-                        <input type="text" id="lastName" required placeholder="Apellido...">
-                    </label>
-                    <label for="email">
-                        <input type="email" id="email" required placeholder="Email...">
-                    </label>
-                    <label for="phone">
-                        <input type="number" id="phone" required placeholder="Teléfono...">
-                    </label>
-                    <label for="opcion">
-                        <select name="opcion" id="opcion" placeholder="Seleccione opción">
-                            <option value="">Seleccione una opción</option>
-                            <option value="">Venta Mayorista</option>
-                            <option value="">Venta Minorista</option>
-                            <option value="">Atención al Consumidor</option>
-                            <option value="">Proveedores</option>
-                        </select>
-                    </label>
-                    <label for="message">
-                        <textarea rows="6" id="message" placeholder="Ingrese su mensaje"></textarea>
-                    </label>
-                    <button type="submit" class="boton-anadir" id="add-btn">ENVIAR</button>
-                </form>
-            </div>
-
-        </section>
-
-        <section class="contactContent">
-           
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/d/embed?mid=1U3Lqb5sbXS3D0LgNfOJfx9s0q-K6AXs&ehbc=2E312F&noprof=1"
-                    width="600" height="570" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-
-            <div class="text2">
-                <p> DONDE NOS ENCONTRAMOS? </p>
-            </div>
-        </section>
-
-
-        <div class="iconsRight">
-            <!-- TODO:  https://faq.whatsapp.com/5913398998672934/-->
-            <a href="https://www.whatsapp.com/" target="_blank">
-                <button>
-                    <img src="./assets/whatsapp-logo.png" alt="whatsapp" width="40px">
-                    <!-- <span class="fa fa-whatsapp fa-3x ga-right"></span> -->
-                </button>
-            </a>
-        </div>
     </main>
 
     <footer>
