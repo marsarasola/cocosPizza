@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://fontawesome.com/icons/facebook?f=brands&s=solid&pc=%23ffffff">
     <link rel="icon" href="./assets/logo-cocos.jpg">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/Formularioflex.css">
     <title>Coco's Pizza - Fábrica de Pre Pizzas Artesanales</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo-sinfondo.png">
 </head>
 
 <body>
@@ -21,52 +23,38 @@
         <nav class="navbar">
 
             <a href="./index.html" class="logo">
-                <img src="./assets/logo-cocos-.png" alt="cocos-pizza" width="150" height="100">
+                <img src="./assets/img/logo-cocos-.png" alt="cocos-pizza" width="150" height="100">
             </a>
 
             <label for="show-menu" class="show-menu"><i style="font-size:25px" class="fa">&#xf0c9;</i></label>
             <input type="checkbox" id="show-menu" role="button">
             <ul id="menu">
-                <li><a href="./index.html" id="navLink">INICIO</a></li>
-                <li><a href="#nuestraHistoria" id="navLink">NUESTRA HISTORIA</a></li>
-                <li><a href="#catalogueSection" id="navLink">CATÁLOGO</a></li>
-                <li><a href="#contacto" id="navLink">CONTACTO</a></li>
+                <li><a href="./index.html" class="navLink">INICIO</a></li>
+                <li><a href="#nuestraHistoria" class="navLink">NUESTRA HISTORIA</a></li>
+                <li><a href="#catalogueSection" class="navLink">CATÁLOGO</a></li>
+                <li><a href="#contactContent" class="navLink">CONTACTO</a></li>
             </ul>
-            <img src="./assets/icons/sound-on.png" alt="" id="muteButton" onclick="toggleMute()" class="silent">
+            <a href="https://wa.link/56g1kx"><img src="./assets/icons/whatsapp-icon.png" alt="icono de whatsapp" class="wpButton"></a>
         </nav>
 
     </header>
 
     <main>
         <div id="video-container">
-            <video autoplay loop id="video-player">
-              <source src="./assets/video/presentation.mp4" type="video/mp4">
-              Tu navegador no puede reproducir el video.
+            <video id="video-player" playsinline loop autoplay muted>
+                <source src="./assets/video/presentation.mp4" type="video/mp4">
+                Tu navegador no puede reproducir el video.
             </video>
-          </div>
+        </div>
         <div class="subMain" id="subMain">
 
             <div class="mainContent" id="nuestraHistoria">
                 <section class="nuestraHistoria">
-                    <h1>Nuestra Historia</h1>
+                    <h2>Nuestra Historia</h2>
                     <div class="bodyHistory">
                         <div class="contentBodyHistory">
                             <img src="./assets/img/nuestraHistoria.png" alt="">
-                            <p>AQUÍ ESTARÍA LA INFO ACERCA DE LA EMPRESA Lorem ipsum dolor sit amet consectetur,
-                                adipisicing
-                                elit. Aspernatur dolores doloremque mollitia.
-                                Fugit
-                                natus minus facere error sapiente molestias, tenetur praesentium itaque provident quia
-                                id
-                                pariatur,
-                                eaque fugiat similique unde.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni perferendis soluta
-                                eum
-                                quidem
-                                minima totam, ab libero incidunt amet maiores quas molestias odio quam autem nihil
-                                doloremque
-                                suscipit
-                                obcaecati.</p>
+                            <p>Somos una empresa Familiar de la ciudad de Mar del Plata</p>
                         </div>
 
                     </div>
@@ -77,44 +65,44 @@
                         <h2>Nuestro Catálogo</h2>
                         <div class="productContent">
                             <div class="product ga ca">
-                                <div class="image" style="background-image: url(../assets/catalogue/pizza-1.jpg)"></div>
+                                <div class="image" style="background-image: url(../assets/catalogue/pizza-1.png)"></div>
                                 <section class="details">
-                                    <h3>Producto 1</h3>
+                                    <h3>Prepizza a la Piedra</h3>
                                     <p>Descripción y detalles del producto 1</p>
                                 </section>
                             </div>
                             <div class="product ga cb">
-                                <div class="image" style="background-image: url(../assets/catalogue/pizza-2.jpg)"></div>
+                                <div class="image" style="background-image: url(../assets/catalogue/pizza-2.png)"></div>
                                 <section class="details">
-                                    <h3>Producto 2</h3>
+                                    <h3>Prepizza al molde</h3>
                                     <p>Descripción y detalles del producto 2</p>
                                 </section>
                             </div>
                             <div class="product ga catalogue">
-                                <div class="image" style="background-image: url(../assets/catalogue/pizza-3.jpg)"></div>
+                                <div class="image" style="background-image: url(../assets/catalogue/pizza-3.png)"></div>
                                 <section class="details">
-                                    <h3>Producto 3</h3>
+                                    <h3>Prepizza Fugazzeta</h3>
                                     <p>Descripción y detalles del producto 3</p>
                                 </section>
                             </div>
                             <div class="product gb cb">
-                                <div class="image" style="background-image: url(../assets/catalogue/pizza-4.jpg)"></div>
+                                <div class="image" style="background-image: url(../assets/catalogue/pizza-4.png)"></div>
                                 <section class="details">
-                                    <h3>Producto 4</h3>
+                                    <h3>Pizzeta</h3>
                                     <p>Descripción y detalles del producto 4</p>
                                 </section>
                             </div>
                             <div class="product gb ca">
                                 <div class="image" style="background-image: url(../assets/catalogue/pizza-5.jpg)"></div>
                                 <section class="details">
-                                    <h3>Producto 5</h3>
+                                    <h3>Media Pizza</h3>
                                     <p>Descripción y detalles del producto 5</p>
                                 </section>
                             </div>
                             <div class="product gb cb">
-                                <div class="image" style="background-image: url(../assets/catalogue/pizza-6.jpg)"></div>
+                                <div class="image" style="background-image: url(../assets/catalogue/pizza-6.png)"></div>
                                 <section class="details">
-                                    <h3>Producto 6</h3>
+                                    <h3>Pizza Integral</h3>
                                     <p>Descripción y detalles del producto 6</p>
                                 </section>
                             </div>
@@ -122,70 +110,66 @@
                 </div>
                 </section>
 
-                <section class="contactContent" id="contacto">
+                <section class="contactContent" id="contactContent">
 
-                    <div class="text">
-                        <p> LLENA EL FORMULARIO Y NOS CONTACTAREMOS CON VOS! </p>
+                    <h2>Contáctenos</h2>
+                    <div class="contact">
+                        <div class="contactTitle-1">
+                            <div class="title-1">
+                                <p>Completa el formulario y nos contactaremos contigo!</p>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <form action="https://formsubmit.co/joshpleing@gmail.com" method="post" class="formContent">
+                                <label for="name">
+                                    <input type="text" id="name" name="Nombre" placeholder="Nombre" class="input">
+                                </label>
+                                <label for="lastName">
+                                    <input type="text" id="lastName" name="Apellido" placeholder="Apellido">
+                                </label>
+                                <label for="phone">
+                                    <input type="number" id="phone" name="Teléfono" placeholder="Teléfono">
+                                </label>
+                                <label for="opcion" class="option">
+                                    <label for="email">
+                                        <input type="email" id="email" name="Email" placeholder="Email"
+                                            class="labelForm">
+                                    </label>
+                                    <select name="opcion" id="Asunto" placeholder="Seleccione opción" class="labelForm">
+                                        <option value="">Seleccione una opción</option>
+                                        <option value="Venta Mayorista">Venta Mayorista</option>
+                                        <option value="Venta Minorista">Venta Minorista</option>
+                                        <option value="Atención al Consumidor">Atención al Consumidor</option>
+                                        <option value="Proveedores">Proveedores</option>
+                                    </select>
+                                </label>
+                                <label for="message">
+                                    <textarea rows="6" id="message" name="Mensaje"
+                                        placeholder="Ingrese su mensaje"></textarea>
+                                </label>
+                                <button type="submit" class="send" id="add-btn">ENVIAR</button>
+                            </form>
+                        </div>
                     </div>
 
-                    <div class="anadir">
-                        <h1 class="titulo-form">DATOS DE CONTACTO</h1>
-                        <form action="">
-                            <label for="name">
-                                <input type="text" id="name" required placeholder="Nombre...">
-                            </label>
-                            <label for="lastName">
-                                <input type="text" id="lastName" required placeholder="Apellido...">
-                            </label>
-                            <label for="email">
-                                <input type="email" id="email" required placeholder="Email...">
-                            </label>
-                            <label for="phone">
-                                <input type="number" id="phone" required placeholder="Teléfono...">
-                            </label>
-                            <label for="opcion">
-                                <select name="opcion" id="opcion" placeholder="Seleccione opción">
-                                    <option value="">Seleccione una opción</option>
-                                    <option value="">Venta Mayorista</option>
-                                    <option value="">Venta Minorista</option>
-                                    <option value="">Atención al Consumidor</option>
-                                    <option value="">Proveedores</option>
-                                </select>
-                            </label>
-                            <label for="message">
-                                <textarea rows="6" id="message" placeholder="Ingrese su mensaje"></textarea>
-                            </label>
-                            <button type="submit" class="boton-anadir" id="add-btn">ENVIAR</button>
-                        </form>
-                    </div>
 
                 </section>
 
-                <section class="contactContent">
+                <section class="mapContent">
 
+                    <div class="contactTitle-1">
+                        <div class="title-1">
+                            <p>Conoce Nuestros puntos de Venta!</p>
+                        </div>
+                    </div>
                     <div class="map">
                         <iframe
-                            src="https://www.google.com/maps/d/embed?mid=1U3Lqb5sbXS3D0LgNfOJfx9s0q-K6AXs&ehbc=2E312F&noprof=1"
-                            width="600" height="570" frameborder="0" style="border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-
-                    <div class="text2">
-                        <p> DONDE NOS ENCONTRAMOS? </p>
+                            src="https://www.google.com/maps/d/embed?mid=1U3Lqb5sbXS3D0LgNfOJfx9s0q-K6AXs&ehbc=2E312F&noprof=1">
+                        </iframe>
                     </div>
                 </section>
 
-            </div>
-
-
-            <div class="iconsRight">
-                <!-- TODO:  https://faq.whatsapp.com/5913398998672934/-->
-                <a href="https://www.whatsapp.com/" target="_blank">
-                    <button>
-                        <img src="./assets/whatsapp-logo.png" alt="whatsapp" width="40px">
-                        <!-- <span class="fa fa-whatsapp fa-3x ga-right"></span> -->
-                    </button>
-                </a>
             </div>
         </div>
 
@@ -194,7 +178,7 @@
     <footer>
         <div class="container">
             <div class="footerLeft">
-                <img src="./assets/logo-sinfondo.png" alt="cocos-pizza" width="150" height="150">
+                <img src="./assets/img/logo-sinfondo.png" alt="cocos-pizza" width="150" height="150">
             </div>
 
             <div class="footerRight">
@@ -219,7 +203,7 @@
 
         </div>
         <div class="down">
-            <p>©Copyright 2023 - COCO'S PIZZA - Todos los derechos reservados</p>
+            <p>©Copyright 2024 - COCO'S PIZZA - Todos los derechos reservados</p>
 
         </div>
     </footer>

@@ -1,7 +1,6 @@
 body {
     padding: 0.1px;
     overflow-x: hidden;
-    background-image: url('../assets/fondo.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -89,16 +88,10 @@ header.abajo #menu a:hover {
     transition: all 0.5s ease;
 }
 
-
-
-
-
 input[type=checkbox] {
     display: none;
 
 }
-
-
 
 input[type=checkbox]:checked~#menu {
     display: block;
@@ -122,64 +115,59 @@ input[type=checkbox]:checked~#menu {
     font-size: 20px;
 }
 
-
-.triangulo {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 99;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
+.wpButton {
+    width: 50px;
+    height: 50px;
+    margin: 40px 0 40px 0;
 }
 
-.triangulo {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 87px solid white;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 99;
-    opacity: 1;
-    transition: opacity 0.5s ease-out;
+.wpButton:hover {
+    filter: brightness(1.5);
+    transition: filter 0.3s ease;
 }
 
-.triangulo.triangulo-transparente {
-    opacity: 0;
-}
+@media screen and (min-width: 150px) and (max-width: 767px) {
 
-.silent {
-    width: 30px;
-    height: 30px;
-    margin: 50px 0 50px 0;
-}
+    .fa {
+        color: var(--color-5);
+    }
 
+    .wpButton {
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
+        display: grid;
+        position: fixed;
+        top: 18px;
+        width: 2.5rem;
+        height: 2.5rem;
+        z-index: 100;
+        left: 75%;
+        margin-top: 1.5rem;
+    }
 
-@media screen and (max-width: 760px) {
-    /* Otros estilos existentes */
+    header .navbar {
+        background-color: #ffffff00;
+    }
+
+    .navbar {
+        box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    
+    }
 
     header .navbar ul {
         position: fixed;
         display: flex;
-        /* Cambiado de display: none; a display: flex; */
         flex-direction: column;
-        /* Alineación vertical de los elementos del menú */
         width: 100%;
         margin: 0;
         transform: translateX(-100%);
-        /* Oculta el menú inicialmente fuera de la pantalla */
         transition: transform 0.4s ease-in-out;
-        /* Agregada transición de transformación */
     }
 
     .navbar ul li,
     .navbar li a {
-        background-color: rgb(0, 0, 0);
+        background-color: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -189,12 +177,8 @@ input[type=checkbox]:checked~#menu {
         transition: transform .15s;
     }
 
-
-    /* Otros estilos existentes */
-
-    #menu.open {
+    .open {
         transform: translateX(0);
-        /* Despliega el menú al estar marcado el checkbox */
     }
 
     input[type=checkbox],
@@ -215,8 +199,8 @@ input[type=checkbox]:checked~#menu {
         border-radius: 50%;
         color: black;
         z-index: 100;
+        left: 90%;
         margin-top: 1.5rem;
-
     }
 
     .logo {
@@ -226,7 +210,7 @@ input[type=checkbox]:checked~#menu {
     }
 
     header.abajo .navbar {
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
+        box-shadow: none;
 
     }
 
@@ -234,81 +218,13 @@ input[type=checkbox]:checked~#menu {
         color: #ffffff;
     }
 
-    #show-menu:checked+.navbar ul {
-        display: none;
+    #show-menu:checked ~ .navbar ul {
+        display: flex;
+        transform: translateX(0);
     }
 
-    /* Estilos para mostrar el menú cuando no está marcado el checkbox */
-    #show-menu:not(:checked)+.navbar ul {
-        display: flex;
-        flex-direction: column;
+    #show-menu:not(:checked) ~ .navbar ul {
+        display: none;
+        transform: translateX(-100%);
     }
 }
-
-/* @media screen and (max-width : 760px) {
-    
-
-    .navbar ul {
-        position: static;
-        display: none;
-        width: 100%;
-        margin: auto;
-       
-        
-    }
-
-   
-
-    .navbar{
-        position: fixed;
-        top: 0;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .navbar ul li,
-    .navbar li a {
-        background-color: rgb(0, 0, 0);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        padding: 20px;
-        
-        float: right;
-        margin-right: .7em;
-        transition: transform .10s;
-    }
-
-    .show-menu {
-        display: block;
-        position: fixed;
-        cursor: pointer;
-        right: 6px;
-        top: 18px;
-        background-color: #37680d;
-        width: 30px;
-        border-radius: 50%;
-        height: 30px;
-        
-        
-    }
-
-    .logo {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    header.abajo .navbar {
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
-        
-    }
-
-    header.abajo #menu a {
-        color: #ffffff;
-    }
-
-    
-
-    
-} */
